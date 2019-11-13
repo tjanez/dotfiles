@@ -10,28 +10,118 @@
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
+    "git.countBadge": "tracked",
     // Use Python 3.
     "python.pythonPath": "python3",
-    "python.linting.pep8Enabled": true,
-    "python.linting.pep8Path": "pycodestyle-3",
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pycodestylePath": "pycodestyle-3",
     "python.linting.pydocstyleEnabled": true,
     "python.linting.pylintPath": "pylint-3",
     // Files to exclude by default.
     "files.exclude": {
-        "**/.git": true,
         ".idea": true,
-        "**/*.pyc": true,
-        "**/__pycache__": true,
         ".tox/**": true,
+        "*.egg-info": true,
+        "**/__pycache__": true,
+        "**/.git": true,
+        "**/.terragrunt-cache": true,
+        "**/*.pyc": true,
         "build": true,
         "dist": true,
-        "*.egg-info": true,
-        "htmlcov": true,
-        ".vscode": true
+        "htmlcov": true
+    },
+    // File paths to exclude from watching.
+    "files.watcherExclude": {
+        // Default.
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        // Custom.
+        "**/.tox/**": true,
     },
     // Install Python language server.
     // More info at: https://github.com/Microsoft/vscode-python/issues/2177.
     "python.jediEnabled": false,
     // Set default zoom level.
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "vim.useSystemClipboard": true,
+    //"vim.useCtrlKeys": false,
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "restructuredtext.linter.executablePath": "/home/tadej/.local/share/virtualenvs/doc8/bin/doc8",
+    "breadcrumbs.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.minimap.enabled": false,
+    // Show white-space characters when the text is selected.
+    "editor.renderWhitespace": "selection",
+    "editor.renderControlCharacters": false,
+    "go.useLanguageServer": true,
+    "go.lintTool":"golangci-lint",
+    "go.lintFlags": [
+        "--fast"
+    ],
+    "rust-client.logToFile": true,
+    "cSpell.userWords": [
+        "Ansible's",
+        "Backblaze",
+        "Backblaze's",
+        "CBOR",
+        "Fortanix",
+        "Syncer",
+        "Terraform",
+        "Vagrantfile",
+        "alicloud",
+        "ansible",
+        "buildkite",
+        "codecov",
+        "creds",
+        "debonding",
+        "deregistration",
+        "deserializes",
+        "devops",
+        "ekiden",
+        "entrypoint",
+        "ethereum",
+        "gcloud",
+        "grpc",
+        "idempotence",
+        "keymanager",
+        "lastpass",
+        "libvirt",
+        "merkle",
+        "mkvs",
+        "nodedb",
+        "oasislabs",
+        "pagerduty",
+        "qemu",
+        "restic",
+        "resticprofile",
+        "subnet",
+        "symlink",
+        "systemctl",
+        "systemd",
+        "tendermint",
+        "testnet",
+        "tjanez",
+        "txnscheduler",
+        "unbuffered",
+        "unmarshals",
+        "urkel",
+        "yacker"
+    ],
+    "terraform.indexing": {
+        "enabled": false,
+        "liveIndexing": false,
+        "delay": 500,
+        "exclude": [
+            ".terraform/**/*",
+            "**/.terraform/**/*"
+        ]
+    },
+    "terraform.languageServer": {
+        "enabled": true,
+        "args": []
+    },
 }
