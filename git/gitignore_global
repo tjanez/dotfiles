@@ -1,0 +1,29 @@
+# Global .gitignore file.
+#
+# NOTE: To use it, run the following:
+# git config --global core.excludesfile <path-to-gitignore_global>
+
+# Based on template provided at https://www.gitignore.io/?templates=vim,code.
+
+### Code ###
+.vscode/*
+
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
