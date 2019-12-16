@@ -3,8 +3,9 @@
     "editor.rulers": [
         72,
         79,
+        80,
         99,
-        119
+        100
     ],
     "editor.renderIndentGuides": true,
     "files.autoSave": "afterDelay",
@@ -70,6 +71,7 @@
         "CBOR",
         "Fortanix",
         "Syncer",
+        "Tendermint's",
         "Terraform",
         "Vagrantfile",
         "alicloud",
@@ -78,6 +80,7 @@
         "codecov",
         "creds",
         "debonding",
+        "delegators",
         "deregistration",
         "deserializes",
         "devops",
@@ -90,6 +93,7 @@
         "keymanager",
         "lastpass",
         "libvirt",
+        "markdownlint",
         "merkle",
         "mkvs",
         "nodedb",
